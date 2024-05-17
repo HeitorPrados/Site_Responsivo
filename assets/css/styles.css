@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-prim: #252525;
+    --cor-sec: #F1B529;
+    --letras: #fff;
+    --cor-footer: #353535;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    border: none;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    color: var(--cor-sec);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+    background-color: var(--cor-sec);
+    color: var(--cor-prim);
+}
+
+.banner {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/experts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px 30px;
+    background-color: rgb(219, 219, 219);
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 20px;
+    color: var(--cor-prim);
+}
+
+h4 {
+    margin-top: 15px;
+    color: var(--cor-sec);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.form1 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+.form1 h2 {
+    text-align: center;
+}
+.form1 p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.form1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form1 input[type="text"],
+.form1 input[type="email"],
+.form1 textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form1 input[type="submit"] {
+    background-color: var(--cor-sec);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.form1 input[type="submit"]:hover {
+    background-color: var(--cor-sec);
+}
+
+footer {
+    background-color: var(--cor-footer);
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--letras);
+    margin-top: 20px;
+}
+
+footer .logo {
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.div-contato {
+    margin: 20px 0;
+}
+
+.contato-logo {
+    width: 25px;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: var(--letras);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .form1 {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 0 15px;
+        height: 40px;
+    }
+
+    .banner {
+        height: 150px;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .form1 {
+        padding: 10px;
+    }
+
+    .form1 p {
+        font-size: 14px;
+    }
+
+    .form1 input[type="text"],
+    .form1 input[type="email"],
+    .form1 textarea {
+        padding: 6px;
+    }
+
+    .form1 input[type="submit"] {
+        padding: 8px 15px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .logo {
+        width: 100px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}

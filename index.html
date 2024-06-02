@@ -9,24 +9,24 @@
 <body>
     <header>
         <a href="/"><img src="assets/img/logo.png" alt="Logo Social Media" class="logo"></a>
-        <nav>  
-            <a href="#"><button>Sobre</button></a>
-            <a href="/Conteúdos"><button>Conteúdos</button></a>
-            <a href="/Inscrição"><button>Inscrição</button></a>
+        <nav>
+            <a href="#sobre"><button>Sobre</button></a>
+            <a href="#conteudos"><button>Conteúdos</button></a>
+            <a href="#inscricao"><button>Inscrição</button></a>
         </nav>
     </header>
     <main>
         <div class="banner">
             <h1>Increva-se Agora</h1>
         </div>
-        <h3>Sobre</h3>
+        <h3 id="sobre">Sobre</h3>
         <p>Nos dias de hoje, a presença online é crucial para qualquer negócio ou marca que deseje se
-             destacar e alcançar seu público-alvo. O Curso de Social Media oferece uma abordagem abrangente para
-              entender e dominar as nuances das mídias sociais. Desde estratégias de conteúdo até análise de
-               métricas, este curso oferece os conhecimentos necessários para se destacar no mundo digital. </p>
+            destacar e alcançar seu público-alvo. O Curso de Social Media oferece uma abordagem abrangente para
+            entender e dominar as nuances das mídias sociais. Desde estratégias de conteúdo até análise de
+            métricas, este curso oferece os conhecimentos necessários para se destacar no mundo digital.</p>
         
         <div class="container">
-            <h3>Conteúdo do Curso de Social Media</h3>
+            <h3 id="conteudos">Conteúdo do Curso de Social Media</h3>
         
             <h4>Introdução às Mídias Sociais</h4>
                 <ul>
@@ -62,33 +62,23 @@
                     <li>Mensuração do retorno sobre o investimento (ROI)</li>
                 </ul>
         </div>
-        <div class="form1">
-            <h2>Inscrição no Curso de Social Media</h2>
-            <p>
-                Para se inscrever no Curso de Social Media, preencha o formulário abaixo com suas informações pessoais:
-            </p>
-            <form action="inscricao" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-    
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name="telefone">
-    
-                <label for="motivacao">Motivação para participar do curso:</label>
-                <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
-    
-                <input type="submit" value="Enviar Inscrição">
-            </form>
-            <p>
-                Após o preenchimento do formulário, entraremos em contato para fornecer mais informações sobre o curso, datas de início e pagamento.
-            </p>
-            <p>
-                Não perca a oportunidade de se tornar um especialista em mídias sociais e impulsionar sua carreira ou negócio para o próximo nível!
-            </p>
-        </div>
+        <section>
+            <div class="funddo-pag">
+                <form action="/submit" method="post">
+                    <h2 style="text-align: center;" id="inscricao">Inscrição no Curso de Social Media</h2>
+                    <p>Para se inscrever no Curso de Social Media, preencha o formulário abaixo com suas informações pessoais:</p>
+                    <input required type="text" class="input" placeholder="Nome*" />
+                    <br /> <br />
+                    <input type="email" class="input" placeholder="Email*" />
+                    <br /> <br />
+                    <input type="tel" class="input" placeholder="Telefone*" />
+                    <br /> <br />
+                    <textarea class="text-area" rows="7" placeholder="Mensagem*"></textarea>
+                    <br><br>
+                    <button class="button-ctt" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>        
     </main>
     <footer>
         <a href="/"><img src="assets/img/logo.png" alt="Logo Social Media" class="logo"></a>
